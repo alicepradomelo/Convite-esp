@@ -14,5 +14,5 @@ document.getElementById('nao').addEventListener('mouseover', function() {
 });
 // Botão "Sim" abre a planilha de filmes
 document.getElementById('sim').addEventListener('click', function() {
-    window.open('https://docs.google.com/spreadsheets/d/1-7mNwtbKc1akStiG8iJ5kEt2ow5Au7pe3drdwxmO2bM/edit?gid=0#gid=0', '_blank'); // Substitua pelo link da sua planilha
+    window.open('https://docs.google.com/spreadsheets/d/1nxDP6m9KsTZEjoH25H1HQvL34KfBm6zOkF_XP8JeGCk/edit?gid=0#gid=0'); // Substitua pelo link da sua planilha
 });
