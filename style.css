@@ -1,6 +1,7 @@
+/* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif; /* Fonte moderna */
+    background-color: #ffe6f2; /* Fundo rosa claro */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,38 +12,71 @@ body {
 .container {
     text-align: center;
     background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
 }
 
 h1 {
-    color: #333;
+    color: #e91e63; /* Rosa escuro */
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
 p {
     color: #555;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 .buttons {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 12px 25px;
     margin: 0 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
 
 #sim {
-    background-color: #4CAF50;
+    background-color: #e91e63; /* Rosa escuro */
     color: white;
 }
 
+#sim:hover {
+    background-color: #c2185b; /* Rosa mais escuro */
+}
+
 #nao {
-    background-color: #f44336;
+    background-color: #ff4081; /* Rosa claro */
     color: white;
+}
+
+#nao:hover {
+    background-color: #f50057; /* Rosa mais escuro */
+}
+
+/* Adicionando uma animação suave para o botão "Não" */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+#nao:hover {
+    animation: shake 0.5s ease-in-out;
 }
